@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+header {
+    padding: 50px 100px;
+    text-align: center;
+    background-image: url("images/code_overlay.jpg");
+    background-size: cover;
+}
+
+h1 {
+    font-family: "Space Mono", monospace;
+    font-size: 50px;
+    color: #F29F05;
+}
+
+.code {
+    background: #F2F2F2;
+    padding: 5px;
+    font-weight: bold;
+}
+
+main {
+    padding: 30px 50px 50px 50px;
+    text-align: center;
+    background-image: url("images/dot-grid.jpg");
+    background-size: 300px 300px;
+}
+
+table {
+    font-family: "Space Mono", monospace;
+    margin-top: 20px;
+    width: 100%;
+}
+
+tbody {
+    background-color: #fafafa;
+}
+
+.table-one {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #BF9BF2;
+}
+
+.table-two {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #F2167D;
+}
+
+.table-three {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #F2B705;
+}
+
+.table-four thead {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #F29F05;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    font-family: "Space Mono", monospace;
+    padding: 30px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+}

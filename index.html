@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSS Cheatsheet — Display and Positioning</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @media only screen and (max-width: 800px) {
+            header {
+                padding: 20px;
+            }
+            main {
+                padding: 20px;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>CSS Display and Positioning</h1>
+        </header>
+        <main>
+            <table>
+                <thead class="table-one">
+                    <tr>
+                        <th style="width: 15%">Element</th>
+                        <th style="width: 15%">Value</th>
+                        <th style="width: 70%">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="width: 15%"><span class="code">position</span></td>
+                        <td style="width: 15%"><span class="code">static</span></td>
+                        <td style="width: 70%">This is the default value of the position property. The element stays in the flow of the document and appears in the actual location where it’s located in the markup.</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 15%"></td>
+                        <td style="width: 15%"><span class="code">relative</span></td>
+                        <td style="width: 70%">The element does not change positions unless one or several properties of <span class="code">top</span>, <span class="code">right</span>, <span class="code">bottom</span>, or <span class="code">left</span> are declared. It also creates a reference position for <span class="code">absolute</span> positioned child elements.</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 15%"></td>
+                        <td style="width: 15%"><span class="code">absolute</span></td>
+                        <td style="width: 70%">The element is removed from the document flow and is positioned in relation to its closest relative positioned ancestor element.</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 15%"></td>
+                        <td style="width: 15%"><span class="code">fixed</span></td>
+                        <td style="width: 70%">The element is removed from the document flow just like the <span class="code">absolute</span> positioned elements. However, unlike the <span class="code">absolute</span> positioned elements, which are relative to an ancestor element, the fixed elements are always relative to the document.</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 15%"></td>
+                        <td style="width: 15%"><span class="code">sticky</span></td>
+                        <td style="width: 70%">This value is a mix between the <span class="code">relative</span> and <span class="code">fixed</span> positions. The element is treated as <span class="code">relative</span> until a specific point or threshold is met, at which point the element is then treated as <span class="code">fixed</span>.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table>
+                <thead class="table-two">
+                    <tr>
+                        <th style="width: 15%">Element</th>
+                        <th style="width: 15%">Value</th>
+                        <th style="width: 70%">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="width: 15%"><span class="code">float</span></td>
+                        <td style="width: 15%"><span class="code">left</span></td>
+                        <td style="width: 70%">Determines how far left an element should float within its parent element. For the property <span class="code">float</span>, the width of the container must be specified or the element will assume the full width of its containing element.</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 15%"></td>
+                        <td style="width: 15%"><span class="code">right</span></td>
+                        <td style="width: 70%">Determines how far right an element should float within its parent element. For the property <span class="code">float</span>, the width of the container must be specified or the element will assume the full width of its containing element.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead class="table-three">
+                    <tr>
+                        <th style="width: 15%">Element</th>
+                        <th style="width: 15%">Value</th>
+                        <th style="width: 70%">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="width: 15%"><span class="code">display</span></td>
+                        <td style="width: 15%"><span class="code">block</span></td>
+                        <td style="width: 70%">Block-level elements take up the full width of their container with line breaks before and after, and can have their height and width manually adjusted.</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 15%"></td>
+                        <td style="width: 15%"><span class="code">inline</span></td>
+                        <td style="width: 70%">Inline elements take up as little space as possible, flow horizontally, and cannot have their width or height manually adjusted.</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 15%"></td>
+                        <td style="width: 15%"><span class="code">inline-block</span></td>
+                        <td style="width: 70%">Inline-block elements can appear next to each other, and can have their width and height manually adjusted.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table-four">
+                <thead>
+                    <tr>
+                        <th style="width: 15%">Element</th>
+                        <th style="width: 15%">Value</th>
+                        <th style="width: 70%">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="width: 15%"><span class="code">z-index</span></td>
+                        <td style="width: 15%">[integer]</td>
+                        <td style="width: 70%">The CSS <span class="code">z-index</span> property specifies how far back or how far forward an element will appear on a web page when it overlaps other elements. The <span class="code">z-index</span> property uses integer values, which can be positive or negative values. The element with the highest <span class="code">z-index</span> value will be at the foreground, while the element with the lowest <span class="code">z-index</span> value will be at the back.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+        <footer>
+            Created by Becky Sullivan &copy; 2022 | Codecademy Project
+        </footer>
+
+    </body>
+</html>
